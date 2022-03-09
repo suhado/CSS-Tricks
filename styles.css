@@ -1,0 +1,24 @@
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+img {
+  width: 10rem;
+}
+
+input {
+  display:none;
+}
+
+input[type="checkbox"] + label { 
+  cursor: pointer;
+  background-repeat: no-repeat;
+  filter: grayscale(80%);
+}
+
+input[type="checkbox"]:checked + .item {
+  filter: grayscale(0%);
+  filter: drop-shadow(3px 3px 0 rgb(249, 139, 139));
+}
